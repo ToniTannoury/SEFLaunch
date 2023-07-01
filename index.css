@@ -1,0 +1,210 @@
+body {
+  background-color: rgb(109, 7, 7);
+  font-size: 16px;
+  font-family: 'Pacifico', cursive;
+}
+
+.container {
+  text-align: center;
+}
+
+.food {
+  margin: 0 auto;
+}
+
+.spinningPizzas {
+  margin-right: 4vw;
+  background-color: rgb(121, 13, 13);
+  text-align: center;
+}
+
+.header h1 {
+  font-weight: bold;
+  color: wheat;
+  font-size: 6vw;
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  text-align: center;
+}
+
+.header p,
+.header h1 {
+  margin: 0;
+  color: wheat;
+}
+
+.header h3 {
+  position: relative;
+  color: wheat;
+  font-size: 3vw;
+  margin: 0;
+  padding: 0;
+}
+
+.header h3::before,
+.header h3::after {
+  content: "";
+  position: absolute;
+  left: 20%;
+  right: 20%;
+  border-top: 0.1vw solid black;
+  z-index: -2;
+}
+
+.header h3::before {
+  top: 50%;
+}
+
+.header h3::after {
+  bottom: 50%;
+  position: relative;
+}
+
+.header span {
+  background-color: rgb(109, 7, 7);
+  padding: 1vw;
+}
+
+.food {
+  margin-left: 2vw;
+  text-align: center;
+}
+
+.pizzasHeading,
+.startersHeading {
+  font-size: 1.5vw;
+  color: wheat;
+  text-align: center;
+  align-items: center;
+  
+}
+.startersHeading h3,
+.pizzasHeading h3{
+  display: inline-block;
+ margin-top:0px;
+}
+
+.pizzasHeading img,
+.startersHeading img {
+  max-height: 7vw;
+  
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+  
+}
+
+.startersContent {
+  margin: 0 auto;
+  max-width: 50%;
+  color: wheat;
+}
+
+.startersContent h4 {
+  margin: 0;
+  padding: 0;
+}
+
+.startersContent p {
+  margin: 0;
+  margin-bottom: 1vw;
+  padding: 0;
+  font-size: 1vw;
+}
+
+.pizzas {
+  text-align: center;
+}
+
+.drinksContent {
+  margin: 0 auto;
+  width: 50%;
+  min-width: 30vw;
+  color: wheat;
+}
+
+.drinksContent h4 {
+  margin: 0.2vw;
+  padding: 0;
+  text-align: center;
+}
+
+.drinksContent p {
+  margin: 0;
+  padding: 0;
+  font-size: 0.8vw;
+}
+
+.rotating-images {
+  margin: 2.5vw auto;
+  text-align: center;
+}
+
+.image-container {
+  display: inline-block;
+  margin: 5px;
+  text-align: center;
+  color: wheat;
+  border-left:50px solid transparent ;
+  transition: transform 0.3s ease;
+}
+
+.image-container img {
+  animation: spin 6s linear infinite;
+  max-width: 100px;
+ 
+}
+
+.image-container:hover {
+  transform: scale(1.1);
+}
+
+.image-container h3 {
+  margin: 0.5vw;
+}
+
+.image-container p {
+  margin: 0;
+}
+
+footer {
+  text-align: center;
+  padding: 2vw;
+  color: wheat;
+  font-size: 1.5vw;
+}
+
+.button {
+  display: inline-block;
+  padding: 0.5vw 2vw;
+  background-color: wheat;
+  text-decoration: none;
+  border-radius: 20px;
+  font-size: 1.6vw;
+  margin: 1vw;
+}
+.button i.fas.fa-info-circle {
+  font-size: 50px;
+  padding: 30px;
+  visibility: visible;
+  position: relative;
+  top: 3px;
+}
+.button i.fas.fa-phone {
+  font-size: 50px;
+  padding: 30px;
+  visibility: visible;
+  position: relative;
+  top: 3px;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
